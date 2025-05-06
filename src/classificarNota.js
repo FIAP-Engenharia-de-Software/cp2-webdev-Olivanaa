@@ -9,7 +9,15 @@
 // - Retorna `"Nota inválida"` se for um valor fora de 0 a 10 ou não numérico.
 
 function classificarNota(nota) {
-  // TODO: implementar função
+  if(typeof(nota) == String || nota > 10 || nota < 0){
+    return "Nota inválida"
+  }else if(nota >= 6){
+    return "Aprovado"
+  }else if(nota < 6){
+    return "Reprovado"
+  }else{
+    return "Nota inválida"
+  }
 }
 
 //NÃO REMOVA O CÓDIGO ABAIXO
